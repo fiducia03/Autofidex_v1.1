@@ -49,77 +49,186 @@ Table of content
 44. Sticky Product | Product Details page
 45. Footer Section
 ==========================================================================*/
+* {
+  box-sizing: border-box;
+}
 
-a {
-  color: #fff;
-  text-decoration: none;
-}
-.me {
-  width: 400px;
-  margin: 90px auto;
-}
-.me p,
-.me h1 {
-  letter-spacing: 3px;
-  text-align: center;
-}
-.me p {
-  font-weight: 200;
-}
-.me span {
-  font-weight: bold;
-}
-.social {
+.fab-wrapper {
   position: fixed;
-  top: 350px;
+  bottom: 3rem;
+  left: 3rem;
 }
-.social ul {
-  padding: 10px;
-  transform: translate(-270px, 0);
+.fab-checkbox {
+  display: none;
+  
 }
-.social ul li {
-  display: block;
-
-
-  margin: 2px;
-  background: rgba(6, 14, 105, 0.36);
-  width: 290px;
-  text-align: right;
-  padding: 2px;
-  border-radius: 0 30px 30px 0;
-  transition: all 1s;
-}
-.social ul li:hover {
-  transform: translate(110px, 0);
-  background: rgba(255, 255, 255, 0.4);
-}
-.social ul li:hover a {
-  color: #000;
-}
-.social ul li:hover i {
-  color: #fff;
-  background: rgba(255, 0, 0, 0.844);
-  transform: rotate(360deg);
-  transition: all 1s;
-}
-.social ul li i {
-  margin-left: 10px;
-  color: #000;
-  background: #fff;
-  padding: 10px;
+.fab {
+  cursor: pointer;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  width: 4rem;
+  height: 4rem;
+  background: blue;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  background: #ffffffc5;
-  transform: rotate(0deg);
+  background: #126ee2;
+  box-shadow: 0px 5px 20px #81a4f1;
+  transition: all 0.3s ease;
+  z-index: 1;
+  border-bottom-left-radius: 6px;
+  border: 1px solid transparent;
 }
 
-body {
-  background: #4F8B89;
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
+.fab:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
+.fab-checkbox:checked ~ .fab:before {
+  width: 90%;
+  height: 90%;
+  right: 5%;
+  top: 5%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.fab:hover {
+  background: #2c32e8;
+  box-shadow: 0px 5px 20px 5px #81a4f1;
+}
+
+.fab-dots {
+  cursor: pointer;
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateX(0%) translateY(-50%) rotate(0deg);
+  opacity: 1;
+  animation: blink 3s ease infinite;
+  transition: all 0.3s ease;
+}
+
+.fab-dots-1 {
+  left: 15px;
+  animation-delay: 0s;
+}
+.fab-dots-2 {
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  animation-delay: 0.4s;
+}
+.fab-dots-3 {
+  right: 15px;
+  animation-delay: 0.8s;
+}
+
+.fab-checkbox:checked ~ .fab .fab-dots {
+  
+  height: 6px;
+}
+
+.fab .fab-dots-2 {
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+}
+
+.fab-checkbox:checked ~ .fab .fab-dots-1 {
+  
+  width: 32px;
+  border-radius: 10px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.fab-checkbox:checked ~ .fab .fab-dots-3 {
+  width: 32px;
+  border-radius: 10px;
+  right: 50%;
+  transform: translateX(50%) translateY(-50%) rotate(-45deg);
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.fab-checkbox:checked ~ .fab .fab-dots {
+  animation: none;
+}
+
+.fab-wheel {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width : 10rem;
+  height: 10rem;
+  transition: all 0.3s ease;
+  transform-origin: bottom right;
+  transform: scale(0);
+}
+
+.fab-checkbox:checked ~ .fab-wheel {
+  transform: scale(1);
+}
+.fab-action {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: White;
+  transition: all 0.3s ease;
+
+  opacity: 0;
+}
+
+.fab-checkbox:checked ~ .fab-wheel .fab-action {
+  opacity: 1;
+}
+
+.fab-action:hover {
+  transform: scale(1.3);
+}
+
+.fab-wheel .fab-action-1 { /* WhatsApp */
+  left: -1rem;
+  top: 0;
+  box-shadow: 0 0.1rem 1rem rgba(24, 154, 57, 0.82);
+  background: rgb(24, 154, 57);
+  color: white !important;
+}
+
+.fab-wheel .fab-action-2 { /* Facebook */
+  left: 3.4rem;
+  top: 0.5rem;
+  box-shadow: 0 0.1rem 1rem rgba(24, 117, 154, 0.82);
+  background: rgb(24, 117, 154);
+  color: white !important;
+}
+.fab-wheel .fab-action-3 { /* Instagram */
+  right: 0.5rem;
+  bottom: 3.4rem;
+  box-shadow: 0 0.1rem 1rem rgba(154, 24, 126, 0.836);
+  background: rgb(255, 0, 200);
+  color: white !important;
+}
+.fab-wheel .fab-action-4 { /* Telefono */
+  right: 0;
+  bottom: -1rem;
+  box-shadow: 0 0.1rem 1rem rgba(180, 113, 13, 0.82);
+  background: rgb(180, 113, 13);
+  color: white !important;
+}
+
 
 .float{
 	position:fixed;
@@ -240,6 +349,16 @@ body {
 /* ==========================================================================
  * 2. Common CSS
    ========================================================================== */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: #00130e;
+}
+
 *, *:before, *:after { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;  }
 html { font-size:62.5%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
 body { font-family:'Rubik', sans-serif; color:#b3140c; font-size:20px; background-color: #ffffff;
@@ -582,7 +701,7 @@ html.drawer-cart-open { overflow: hidden; }
 
 .home-version-3 .section-header h2{ font-size:24px; text-transform:uppercase; margin:0; }
 .home-version-3 .section-header h2:before { content:''; border-top:1px solid #210707; position:absolute; top:50%; left:-53px; width:40px; }
-.home-version-3 .section-header h2:after { content:''; border-bottom: 1px solid #210707; position:absolute; top:50%; right:-53px; width:40px; margin-left:20px; }
+.home-version-3 .section-header h2:after { content:''; border-bottom: 1px solid #210707; position:absolute; top:50%; right:-53px; width:40px; }
 
 .home-version-3 .home-collection .row{ margin-bottom:-30px;border-radius: 20px; }
 .home-version-3 .home-collection .collection-item{ margin-bottom:30px; border-radius: 20px;}
