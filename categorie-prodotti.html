@@ -1,14 +1,23 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
+<!doctype html>
+<html class="no-js" lang="it">
     <head>
+   
         <!-- Required meta tags -->
+        <!-- Required meta tags -->
+
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+ <meta property="og:url" content="https://www.facebook.com/profile.php?id=61551025616383"/>
+<meta property="og:title" content="Autofidex Autoricambi Online"/>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content=" " />
+        <meta name="description" content="Tutte le categorie di prodotti disponibili in stock, con i relativi marchi. " />
         <!-- Title -->
-        <title>Cosa Trattiamo - Auofidex Autoricambi</title>
-        <!-- Favicon  -->
+        <title>I nostri prodotti | Autofidex Autoricambi Online</title>
+        <!-- Favicon  --> 
         <link rel="shortcut icon" href="assets/images/fevicon.png" />
 
         <!-- *********** CSS Files *********** -->
@@ -16,55 +25,184 @@
         <link rel="stylesheet" href="assets/css/plugins.css" />
         <!-- Styles CSS -->
         <link rel="stylesheet" href="assets/css/styles.css" />
-        <link rel="stylesheet" href="assets/css/responsive.css" />       
+        <link rel="stylesheet" href="assets/css/responsive.css" />     
+        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" ></script>
+
+        <!-- Firebase Module -->
+        
+        <script type="module" src="/assets/js/firebaseconfig.js"></script>
     </head>
 
-    <body class="template-collections-listing bg-blur-no-repeat">
+    <body class="template-index home-version-3 bg-blur-no-repeat">
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <a href="https://wa.me/3519948617/?text=Salve%2C%20vorrei%20avere%20delle%20informazioni%20su%20un%20autoricambio." class="float" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
-        </a>
-        
+      
+  
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+     
         <!-- Start Page Loader -->
         <div class="page-loading"></div>
         <!-- End Page Loader -->
-
+      
+         
         <!--  Start Main Wrapper -->
-        <div class="main-wrapper cart-drawer-push">
-            <!-- Start Promotional Bar Section -->
-          <div class="main-wrapper">
+        <div class="main-wrapper">
             <!-- Start Promotional Bar Section -->
             
             <!-- End Promotional Bar Section -->
 
             <!-- Start Header Section -->
-            <header class="header bg-white">
-                <div class="container-fluid full-header">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <!-- Start Navigation -->
-                        <nav class="navigation navbar position-static navbar-expand-lg p-0 w-50">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"><span class="icon ti-menu"></span></button>        
-                            <div id="navbar-collapse" class="navbar-collapse collapse dual-nav">
-                                                               <a href="#" class="closeNav-btn d-lg-none clearfix" id="closeNav" title="Close"><span class="menu-close mr-2"></span><i class="ti-close" aria-hidden="true"></i></a>
+            
+            <div class="header-filler"></div>
+            <header class="header bg-white header-sticky">
+                <!-- Start Main Header -->
+                <div class="main-header">
+                    <div class="container">
+                        <div class="d-flex justify-content-between align-items-center logo-right-menu">
+                            
+                            <!-- Start Logo -->
+                            <div class="col-3 col-sm-3 col-md-2 col-lg-2 navbar-brand logo p-0 m-0">
+                                <!-- Start Sticky Menu Toggle -->
+                                <button class="sticky-menu-button d-none" type="button"><span class="icon ti-menu"></span><span class="d-none menu-text">Menu</span></button> 
+                                <!-- End Sticky Menu Toggle -->
+  
+                                <a  href="index.html" class="logo-img"><img class="img-fluid" src="assets/images/logo/logo.png" alt="logo" title="Autofidex Autoricambi" /></a>
+                            
+                            </div>
+                            <!-- End Logo -->
+                            <div class="fab-wrapper">
+                                <input id="fabCheckbox" type="checkbox" class="fab-checkbox" />
+                                <label class="fab" for="fabCheckbox">
+                                  <span class="fab-dots fab-dots-1"></span>
+                                  <span class="fab-dots fab-dots-2"></span>
+                                  <span class="fab-dots fab-dots-3"></span>
+                                </label>
+                                <div class="fab-wheel">
+                                  <a class="fab-action fab-action-1" href="https://wa.me/3519948617/?text=Salve%2C%20vorrei%20avere%20delle%20informazioni%20su%20un%20autoricambio.">
+                                    <i class="fa fa-whatsapp"></i>
+                                  </a>
+                                  <a class="fab-action fab-action-2" href="https://www.facebook.com/profile.php?id=61551025616383">
+                                    <i class="fa fa-facebook"></i>
+                                  </a>
+                                      <a class="fab-action fab-action-3" href="https://www.instagram.com/autofidex/">
+                                    <i class="fa fa-instagram" ></i>
+                                  </a>
+                                      <a class="fab-action fab-action-4"  href="tel:+393283121537">
+                                    <i class="fa fa-phone"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            <!-- Start Right Menu -->
+                            <div class="col-9 col-sm-9 col-md-10 col-lg-10 p-0 right-side">
+                          
+                                <div class="d-flex flex-row-reverse align-items-center right-side-menu">
+                                    
+                                    <!-- Start Menu Toggle -->
+                                    <button class="navbar-toggler d-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbar-collapse"><span class="icon ti-menu"></span><span class="d-none menu-text">Menu</span></button> 
+                                    <!-- End Menu Toggle -->
 
+                                    <!-- Start Minicart -->
+                         
+                                    <!-- End Minicart -->
+                          
+                                    <!-- Start Setting Menu -->
+                                    <div class="setting-menu float-right">
+                                     
+
+                            
+                                      
+                             
+                                        <a href="#" class="setting-toggle" title="Il mio profilo">                
+                                            <i class="icon ti-user"></i>
+                                        </a>
+                                        <div class="settinglinks" style="display:none">
+                                            
+                                            <!-- Menu Links -->
+                                            <div class="my-links">
+                                                <h4>Il mio profilo</h4>
+                                                <ul class="p-0 m-0">
+                                          
+                                                    <li><a href="coming-soon.html">Accedi</a></li>
+                                              
+                                                </ul>
+                                            </div>
+                                            <!-- Emd Menu Links -->
+                                            
+                                            <!-- Start Currency Picker --> 
+                                            <div class="my-currency">
+                                                <h4>I tuoi ordini</h4>
+                                                <ul class="currency-picker">
+                                                    <li class="item"><a href="coming-soon.html">Traccia ordine</a></li>
+                                                      <li class="item"><a href="contattaci.html">Preventivo</a></li>
+                                                   
+                                                </ul>
+                                            </div>
+                                            <!-- End Currency Picker -->
+                                            <!-- Start Languages --> 
+                                            <div class="my-languages">
+                                               <h4>Lingua</h4>
+                                        <ul class="languages-picker">
+                                            <li class="item english"><a href="coming-soon.html">English</a></li>
+                                            <li class="item spanish"><a href="index.html">Italiano</a></li>
+                                          
+                                            </div>
+                                            <!-- End Languages -->
+                                        </div>
+                                    </div>
+                                    <!-- End Setting Menu -->
+
+                                  <!-- Start Search Box
+                                    <div class="search-box site-header-search float-right">
+                                        <div class="search-toggle d-block d-lg-none" style="cursor:pointer;"><i class="icon ti-search"></i></div>
+                                        <form action="coming-soon.html" class="search-form">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Ricerca prodotti..." required />
+                                                <button class="search-btn btn-secondary" type="submit"><i class="ti-search"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- End Search Box -->
+
+                                    <!-- Start YMM Box -->
+                                   
+                                    <!-- End YMM Box -->
+                                </div>
+                            </div>
+                            <!-- End Right Menu -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Main Header -->
+
+                <!-- Start Navigation -->
+                <div class="main-navbar active">
+                    <div class="container">
+                        <nav class="navigation navbar position-static navbar-expand-lg p-0 col-lg-12">
+                            <div id="navbar-collapse" class="navbar-collapse collapse dual-nav">
+                                <a href="#" class="closeNav-btn d-lg-none clearfix" id="closeNav" title="Close"><span class="menu-close mr-2"></span><i class="ti-close" aria-hidden="true"></i></a>
                                 <ul class="navbar-nav">
                                     <li class="nav-item dropdown">
-                            <a class="nav-link" href="index.html"><i class="fa fa-home"></i></a>    
-                                       
-                                    </li>
+                                        <a class="nav-link" href="index.html"><i class="fa fa-home"></i></a>  
+                                        <!-- Start Megamenu Dropdown -->
+                                     
+                                        <!-- End Megamenu Dropdown -->
                                     
-                                    
+                                  
+                                        <!-- End Megamenu Style 1 -->
+                                 
                                         <!-- Start Megamenu Style 2 -->
-                                       
+                                     
                                         <!-- End Megamenu Style 2 -->
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Menù
-                                            <span class="arw plush" title="Click to show/hide"></span>
+                                  
                                          
                                         </a>  
                                         <!-- Start Megamenu Style 3 -->
-                                                       <div class="megamenu submenu style3">
+                                        <div class="megamenu submenu style3" >
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col-sm-12">
@@ -84,7 +222,7 @@
                                                                 <ul>
                                                                     <li class="item-img"><a href="coming-soon.html" class="img"><img class="img-fluid blur-up lazyload" src="assets/images/megamenu/image-4.jpg" data-src="assets/images/megamenu/image-4.jpg" alt="image" title="Connettiti!" /></a></li>
                                                                     <li><a class="item" href="coming-soon.html">Accedi</a></li>
-                                                                    
+                                                            
                                                                     <li><a class="item" href="coming-soon.html">Hai dimenticato la tua password?</a></li>
                                                               
                                                                 </ul>
@@ -114,97 +252,29 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- End Megamenu Style 3 -->
+                                           <!-- End Megamenu Style 3 -->
+                                       
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="blog.html">BLOG
+                   
+                                            </a> 
+                                        </li>
                                     </li>
                                    
-                                    <li class="nav-item dropdown" >
-                                    
+                                
+                                        <!-- End Megamenu Dropdown -->
+                                  
                                         <!-- Start Megamenu Dropdown -->
-                                        <div class="megamenu submenu dropdown"  >
-                                            <ul>
-                                         
-                                              
-                                                <li class="dropmenu">
-                                                 
-                                                    <ul class="droplink submenu1" >
-                                                  
-                                                       
-                                                        
-                                                    </ul>
-                                                </li>
-                                               
-                                           
-                                             
-                                             
-                                            </ul>
-                                        </div>
+                                    
                                         <!-- End Megamenu Dropdown -->
                                     </li>
-                                
                                 </ul>
                             </div>
                         </nav>
-                        <!-- Start Navigation -->
-                        <!-- Start Logo -->
-                        <div class="navbar-brand logo mx-auto p-0 text-center">
-                            <a href="index.html" class="logo-img"><img class="img-fluid" src="assets/images/logo/logo.png" alt="logo" title="Autofidex Autoricambi" /></a>
-                        </div>
-                                 <!-- End Logo -->
-                          
-                        <!-- Start Right Menu -->
-                        <div class="w-50 right-side">
-                            <!-- Start Minicart -->
-                       
-                            <!-- End Minicart -->
-                            <!-- Start Setting Menu -->
-                            <div class="setting-menu float-right">
-
-                                <a href="#" class="setting-toggle" title="Il mio profilo">                
-                                    <i class="icon ti-user"></i>
-                                </a>
-                                <div class="settinglinks" style="display:none">
-                                    
-                                    <!-- Menu Links -->
-                                    <div class="my-links">
-                                        <h4>Il mio profilo</h4>
-                                        <ul class="p-0 m-0">
-                                            <li><a href="coming-soon.html">Accedi</a></li>
-                                            <li><a href="coming-soon.html">Registrati</a></li>
-                                       
-                                        </ul>
-                                    </div>
-                                    <!-- Emd Menu Links -->
-                                    <!-- Start Currency Picker --> 
-                                    <div class="my-currency">
-                                        <h4>I tuoi ordini</h4>
-                                        <ul class="currency-picker">
-                                            <li class="item"><a href="coming-soon.html">Traccia ordine</a></li>
-                                              <li class="item"><a href="contattaci.html">Preventivo</a></li>
-                                           
-                                        </ul>
-                                    </div>
-                                    <!-- End Currency Picker -->
-                                    <!-- Start Languages --> 
-                                    <div class="my-languages">
-                                       <h4>Lingua</h4>
-                                <ul class="languages-picker">
-                                    <li class="item english"><a href="coming-soon.html">English</a></li>
-                                    <li class="item spanish"><a href="index.html">Italiano</a></li>
-                                  
-                                    </div>
-                                    <!-- End Languages -->
-                                </div>
-                            </div>
-                            <!-- End Setting Menu -->
-                            <!-- Start Search Box -->
-                          
-                            <!-- End Search Show -->
-                        </div>
-                        <!-- End Right Menu -->
                     </div>
                 </div>
+                <!-- Start Navigation -->
             </header>
-            <!-- End Header Section -->
 
             <!-- Start Main Content -->
             <main class="main-content">
@@ -221,10 +291,28 @@
                 <!-- End Breadcrumb -->
 
                 <!-- Start Collection List -->
-                <marquee scrollamount=10>
-                    <p ><i>In questa pagina, vengono mostrate le categorie e le  relative sottocategorie di autoricambi disponibili su Autofidex. Clicca sulle immagini per scoprire tutti i nostri marchi.</i></p>
-                </marquee>
-            
+                <div class="Marquee-box" >
+                    <marquee class="MyMarquee" id="my_marquee" direction="left" behavior="3" scrollamount="10">
+                      <div><img src="https://html-generator.com/uploads/images/2023/09/04/824971TMFFOGFE6.png" width="80" height="80" alt="marquee image"></div>
+                      <div>In questa pagina, vengono mostrate le categorie e le  relative sottocategorie di autoricambi disponibili su Autofidex. Clicca sulle immagini per scoprire tutti i nostri marchi.</div>
+                      <div><img src="https://html-generator.com/uploads/images/2023/09/04/08346WQ7L9816PW.png" width="80" height="80" alt="marquee image"></div>
+                    </marquee>
+                  </div>
+                 
+                 
+                  <p>   </p>
+                <div id="marchi-slider" class="hcg-slider">
+                    <div class="hcg-slide-container">
+                    <div class="hcg-slider-body">
+                        <a class="hcg-slides animated" style="display:flex">
+                            <span class="hcg-slide-number">1/5</span>
+                            <img src="https://html-generator.com/uploads/images/2023/09/04/64261ZAX65EN2XY.jpg" alt="64261ZAX65EN2XY.jpg">
+                            <span class="hcg-slide-text">64261ZAX65EN2XY.jpg</span>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                
                 
                 <div class="colection-listing">
                     <div class="container">
@@ -236,8 +324,8 @@
                                     <div class="collection-details">
                                         <p class="count-pro">
                                             </p>
-                                            <div onclick="myFunction()">   <a> 
-                                                <img class="img-fluid blur-up lazyload w-100" src="assets/images/collection/collection5.png" data-src="assets/images/collection/collection5.png" href=alt="image" title="Impianto Frenante" >
+                                            <div onclick="myFunction()">   <a href="freni.html"> 
+                                                <img class="img-fluid blur-up lazyload w-100"  src="assets/images/collection/collection5.png" data-src="assets/images/collection/collection5.png"  alt="image" title="Impianto Frenante" >
                                             </a>
                                              
                                               </div>
@@ -256,7 +344,7 @@
                                   
                                     <div class="collection-details">
                                         <p class="count-pro"></p>
-                                        <div onclick="myFunction2()">   <a> 
+                                        <div onclick="myFunction2()">   <a href="sterzo.html"> 
                                             <img class="img-fluid blur-up lazyload w-100" src="assets/images/collection/collection2.png" data-src="assets/images/collection/collection2.png" alt="image" title="Sterzo">
                                         </a>
                                           </div>
@@ -274,7 +362,7 @@
                                  
                                     <div class="collection-details">
                                         <p class="count-pro"></p>
-                                        <div onclick="myFunction3()">   <a> 
+                                        <div onclick="myFunction3()">   <a href="distribuzione.html"> 
                                             <img class="img-fluid blur-up lazyload w-100" src="assets/images/collection/collection3.png" data-src="assets/images/collection/collection3.png" alt="image" title="Distribuzione">
                                         </a>
                                           </div>
@@ -294,7 +382,7 @@
                                 <div class="collection-item position-relative text-center mb-5">
                                     <div class="collection-details">
                                         <p class="count-pro"></p>
-                                        <div onclick="myFunction4()">   <a> 
+                                        <div onclick="myFunction4()">   <a href="raffreddamento.html"> 
                                             <img class="img-fluid blur-up lazyload w-100" src="assets/images/collection/collection4.png" data-src="assets/images/collection/collection4.png" alt="image" title="Climatizzazione e raffreddamento">
                                         </a>
                                           </div>
@@ -315,7 +403,7 @@
                                 <div class="collection-item position-relative text-center mb-5">
                                     <div class="collection-details">
                                         <p class="count-pro"></p>
-                                        <div onclick="myFunction5()">   <a> 
+                                        <div onclick="myFunction5()">   <a href="filtri.html"> 
                                             <img class="img-fluid blur-up lazyload w-100" src="assets/images/collection/collection1.png" data-src="assets/images/collection/collection1.png" alt="image" title="Filtri motore e abitacolo">
                                         </a>
                                           </div>
@@ -333,7 +421,7 @@
                                 <div class="collection-item position-relative text-center mb-5">
                                     <div class="collection-details">
                                         <p class="count-pro"></p>
-                                        <div onclick="myFunction6()">   <a> 
+                                        <div onclick="myFunction6()">   <a href="scarico.html"> 
                                             <img class="img-fluid blur-up lazyload w-100" src="assets/images/collection/collection6.png" data-src="assets/images/collection/collection6.png" alt="image" title="Scarico">
                                         </a>
                                           </div>
@@ -350,7 +438,7 @@
                                 <div class="collection-item position-relative text-center mb-5">
                                     <div class="collection-details">
                                         <p class="count-pro"></p>
-                                        <div onclick="myFunction7()">   <a> 
+                                        <div onclick="myFunction7()">   <a href="tiranteria.html"> 
                                             <img class="img-fluid blur-up lazyload w-100" src="assets/images/collection/collection7.png" data-src="assets/images/collection/collection7.png" alt="image" title="Tiranteria e Sospensioni">
                                         </a>
 
@@ -374,7 +462,7 @@
                                 <div class="collection-item position-relative text-center mb-5">
                                     <div class="collection-details">
                                         <p class="count-pro"></p>
-                                        <div onclick="myFunction8()">   <a> 
+                                        <div onclick="myFunction8()">   <a href="parti-elettriche.html"> 
                                             <img class="img-fluid blur-up lazyload w-100" src="assets/images/collection/collection8.png" data-src="assets/images/collection/collection8.png" alt="image" title="Alimentazione e Parti Elettriche">
                                         </a>
                                           </div>
@@ -399,7 +487,7 @@
                                 <div class="collection-item position-relative text-center mb-5">
                                     <div class="collection-details">
                                         <p class="count-pro"></p>
-                                        <div onclick="myFunction9()">   <a> 
+                                        <div onclick="myFunction9()">   <a href="motore.html"> 
                                             <img class="img-fluid blur-up lazyload w-100" src="assets/images/collection/collection9.png" data-src="assets/images/collection/collection9.png" alt="image" title="Parti Motore">
                                         </a>
                                           </div>
@@ -415,7 +503,7 @@
                                 <div class="collection-item position-relative text-center mb-5">
                                     <div class="collection-details">
                                         <p class="count-pro"></p>
-                                        <div onclick="myFunction10()">   <a> 
+                                        <div onclick="myFunction10()">   <a href="fluidi.html"> 
                                             <img class="img-fluid blur-up lazyload w-100" src="assets/images/collection/collection10.png" data-src="assets/images/collection/collection10.png" alt="image" title="Lubrificanti e Fluidi">
                                         </a>
                                           </div>
@@ -434,7 +522,7 @@
                                 <div class="collection-item position-relative text-center mb-5">
                                     <div class="collection-details">
                                         <p class="count-pro"></p>
-                                        <div onclick="myFunction11()">   <a> 
+                                        <div onclick="myFunction11()">   <a href="spazzole.html"> 
                                             <img class="img-fluid blur-up lazyload w-100" src="assets/images/collection/collection11.png" data-src="assets/images/collection/collection11.png" alt="image" title="Spazzole Tergicristallo">
                                         </a>
                                           </div>
@@ -450,7 +538,7 @@
                                 <div class="collection-item position-relative text-center mb-5">
                                     <div class="collection-details">
                                         <p class="count-pro"></p>
-                                        <div onclick="myFunction12()">   <a> 
+                                        <div onclick="myFunction12()">   <a href="frizione.html"> 
                                             <img class="img-fluid blur-up lazyload w-100" src="assets/images/collection/collection12.png" data-src="assets/images/collection/collection12.png" alt="image" title="Frizione e Trasmissione">
                                         </a>
                                           </div>
@@ -486,7 +574,7 @@
                                 </div>
                                 <div class="social-icons">
                                     <ul class="d-flex flex-row align-items-center text-center">
-                                 <li><a href="#" title="Facebook"><i class="icon ti-facebook"></i></a></li>
+                                 <li><a href="https://www.facebook.com/profile.php?id=61551025616383" title="Facebook"><i class="icon ti-facebook"></i></a></li>
                                         <li><a href="https://wa.me/3519948617/?text=Salve%2C%20vorrei%20avere%20delle%20informazioni%20su%20un%20autoricambio." title="WhatsApp"><i class="fa fa-whatsapp"></i></a></li>
                                         <li><a href="https://instagram.com/autofidex?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" title="Instagram"><i class="icon ti-instagram"></i></a></li>
                                        
@@ -562,28 +650,28 @@
             </footer>
                 <!-- End Footer Bottom -->
             </footer>
-            <div class="fab-wrapper">
-                <input id="fabCheckbox" type="checkbox" class="fab-checkbox" />
-                <label class="fab" for="fabCheckbox">
-                  <span class="fab-dots fab-dots-1"></span>
-                  <span class="fab-dots fab-dots-2"></span>
-                  <span class="fab-dots fab-dots-3"></span>
-                </label>
-                <div class="fab-wheel">
-                  <a class="fab-action fab-action-1">
-                    <i class="fa fa-whatsapp"></i>
-                  </a>
-                  <a class="fab-action fab-action-2">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                      <a class="fab-action fab-action-3">
-                    <i class="fa fa-instagram"></i>
-                  </a>
-                      <a class="fab-action fab-action-4">
-                    <i class="fa fa-phone"></i>
-                  </a>
-                </div>
-              </div>
+         <div class="fab-wrapper">
+                                <input id="fabCheckbox" type="checkbox" class="fab-checkbox" />
+                                <label class="fab" for="fabCheckbox">
+                                  <span class="fab-dots fab-dots-1"></span>
+                                  <span class="fab-dots fab-dots-2"></span>
+                                  <span class="fab-dots fab-dots-3"></span>
+                                </label>
+                                <div class="fab-wheel">
+                                  <a class="fab-action fab-action-1" href="https://wa.me/3519948617/?text=Salve%2C%20vorrei%20avere%20delle%20informazioni%20su%20un%20autoricambio.">
+                                    <i class="fa fa-whatsapp"></i>
+                                  </a>
+                                  <a class="fab-action fab-action-2" href="https://www.facebook.com/profile.php?id=61551025616383">
+                                    <i class="fa fa-facebook"></i>
+                                  </a>
+                                      <a class="fab-action fab-action-3" href="https://www.instagram.com/autofidex/">
+                                    <i class="fa fa-instagram" ></i>
+                                  </a>
+                                      <a class="fab-action fab-action-4"  href="tel:+393283121537">
+                                    <i class="fa fa-phone"></i>
+                                  </a>
+                                </div>
+                              </div>
             <!-- Start Scroll Top -->
             <div id="scrollTop"><i class="ti-arrow-up"></i></div>
             <!-- End Scroll Top -->
@@ -608,7 +696,479 @@
 
         <!-- Main JS -->
         <script src="assets/js/main.js"></script>
-
+        <script>
+            (() => {
+            //If you want to add more images, add the link name and URL image URL in the array list below.
+                const images_list = [
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/64261ZAX65EN2XY.jpg",
+                "alt": "",
+                "name": "64261ZAX65EN2XY.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/648996FFJ3VT6BR.png",
+                "alt": "",
+                "name": "648996FFJ3VT6BR.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/826658C_S_TBS6U.png",
+                "alt": "",
+                "name": "826658C_S_TBS6U.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/82984S376D5EU_Z.png",
+                "alt": "",
+                "name": "82984S376D5EU_Z.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/83411KBK7WXJNK9.png",
+                "alt": "",
+                "name": "83411KBK7WXJNK9.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/838681G4C3DJMDN.jpeg",
+                "alt": "",
+                "name": "838681G4C3DJMDN.jpeg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/84471GJ51OW84FS.png",
+                "alt": "",
+                "name": "84471GJ51OW84FS.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/8472619BSVMAHX8.png",
+                "alt": "",
+                "name": "8472619BSVMAHX8.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/85365J4AK7M_E0B.jpeg",
+                "alt": "",
+                "name": "85365J4AK7M_E0B.jpeg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/85737O9HEHZUM6J.png",
+                "alt": "",
+                "name": "85737O9HEHZUM6J.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/05817NUNLHXKRU6.png",
+                "alt": "",
+                "name": "05817NUNLHXKRU6.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/06048DOT9XILLLC.png",
+                "alt": "",
+                "name": "06048DOT9XILLLC.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/06283U_DJOIO97_.png",
+                "alt": "",
+                "name": "06283U_DJOIO97_.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/06543POO_B_W6O6.png",
+                "alt": "",
+                "name": "06543POO_B_W6O6.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/06771OWNVTMOUQH.png",
+                "alt": "",
+                "name": "06771OWNVTMOUQH.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/07365APB89FFH_2.jpg",
+                "alt": "",
+                "name": "07365APB89FFH_2.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/07978R7YES3CGKB.png",
+                "alt": "",
+                "name": "07978R7YES3CGKB.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/0829091MBNTCOXB.jpg",
+                "alt": "",
+                "name": "0829091MBNTCOXB.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/08539ZT3J864YEK.png",
+                "alt": "",
+                "name": "08539ZT3J864YEK.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/0895622_V5DOGVK.png",
+                "alt": "",
+                "name": "0895622_V5DOGVK.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/39308DF6_XHHUB0.jpg",
+                "alt": "",
+                "name": "39308DF6_XHHUB0.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/396448RP1H7N36X.jpeg",
+                "alt": "",
+                "name": "396448RP1H7N36X.jpeg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/399254N229EFOHE.jpg",
+                "alt": "",
+                "name": "399254N229EFOHE.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/40171W_R8FZXUA9.png",
+                "alt": "",
+                "name": "40171W_R8FZXUA9.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/404522PXGB6W_1T.png",
+                "alt": "",
+                "name": "404522PXGB6W_1T.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/4067870GXN0XR6J.png",
+                "alt": "",
+                "name": "4067870GXN0XR6J.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/4093052T_S80AAQ.png",
+                "alt": "",
+                "name": "4093052T_S80AAQ.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/41197P7W3MH95AN.png",
+                "alt": "",
+                "name": "41197P7W3MH95AN.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/41451_Y7HBQIDE0.jpg",
+                "alt": "",
+                "name": "41451_Y7HBQIDE0.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/41710H9ANGKY1PF.jpg",
+                "alt": "",
+                "name": "41710H9ANGKY1PF.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/692635ALX6VR4TG.png",
+                "alt": "",
+                "name": "692635ALX6VR4TG.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/6954763745VH3UL.jpg",
+                "alt": "",
+                "name": "6954763745VH3UL.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/69975R6ZT4G95O3.jpg",
+                "alt": "",
+                "name": "69975R6ZT4G95O3.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/70284EJ9OHNB8ZQ.jpg",
+                "alt": "",
+                "name": "70284EJ9OHNB8ZQ.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/70542HBNVVEHJYV.jpeg",
+                "alt": "",
+                "name": "70542HBNVVEHJYV.jpeg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/707953ONBZWHRK8.png",
+                "alt": "",
+                "name": "707953ONBZWHRK8.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/7106219_35DV81Y.jpg",
+                "alt": "",
+                "name": "7106219_35DV81Y.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/71299Y0KXUENZKL.jpg",
+                "alt": "",
+                "name": "71299Y0KXUENZKL.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/71593FRCKVT240C.png",
+                "alt": "",
+                "name": "71593FRCKVT240C.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/72015JG3LJFGRK2.png",
+                "alt": "",
+                "name": "72015JG3LJFGRK2.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/94680M4ZF8KT14U.png",
+                "alt": "",
+                "name": "94680M4ZF8KT14U.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/95014929PP38TWW.jpg",
+                "alt": "",
+                "name": "95014929PP38TWW.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/95258VMW7A1OHX5.jpg",
+                "alt": "",
+                "name": "95258VMW7A1OHX5.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/96075FVBFU14J8N.png",
+                "alt": "",
+                "name": "96075FVBFU14J8N.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/963898ENGV4_2HX.png",
+                "alt": "",
+                "name": "963898ENGV4_2HX.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/96616DGRBJJUHAL.jpg",
+                "alt": "",
+                "name": "96616DGRBJJUHAL.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/968567_TGA4MM3U.jpeg",
+                "alt": "",
+                "name": "968567_TGA4MM3U.jpeg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/97099_ANQZ9D6HQ.jpg",
+                "alt": "",
+                "name": "97099_ANQZ9D6HQ.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/973498IMV9V1AT5.png",
+                "alt": "",
+                "name": "973498IMV9V1AT5.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/97634Z6_6Q45PHC.jpg",
+                "alt": "",
+                "name": "97634Z6_6Q45PHC.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/26881_1M3D6KC1R.gif",
+                "alt": "",
+                "name": "26881_1M3D6KC1R.gif",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/27167P_V3JPVKG2.jpg",
+                "alt": "",
+                "name": "27167P_V3JPVKG2.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/2740603L500SX5L.png",
+                "alt": "",
+                "name": "2740603L500SX5L.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/294651ZGL5BWPGN.jpg",
+                "alt": "",
+                "name": "294651ZGL5BWPGN.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/30426Y3O0D5HDUW.png",
+                "alt": "",
+                "name": "30426Y3O0D5HDUW.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/307651A468KKYL0.png",
+                "alt": "",
+                "name": "307651A468KKYL0.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/311871AF1LY2NE0.png",
+                "alt": "",
+                "name": "311871AF1LY2NE0.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/32352CNBHXPX_0Y.png",
+                "alt": "",
+                "name": "32352CNBHXPX_0Y.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/32614DAIQ0IW_HK.png",
+                "alt": "",
+                "name": "32614DAIQ0IW_HK.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/32903F_KY6K4R1_.jpg",
+                "alt": "",
+                "name": "32903F_KY6K4R1_.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/55727M6EMPNYNTR.jpg",
+                "alt": "",
+                "name": "55727M6EMPNYNTR.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/55988O1MZA2PK2C.png",
+                "alt": "",
+                "name": "55988O1MZA2PK2C.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/566036TH1DS97LZ.png",
+                "alt": "",
+                "name": "566036TH1DS97LZ.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/57760Y7MALTU976.png",
+                "alt": "",
+                "name": "57760Y7MALTU976.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/58368ZV1JK_C7WB.jpg",
+                "alt": "",
+                "name": "58368ZV1JK_C7WB.jpg",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/586274XPR2HT170.png",
+                "alt": "",
+                "name": "586274XPR2HT170.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/588520_2EC6QULR.png",
+                "alt": "",
+                "name": "588520_2EC6QULR.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/59102780ID4LTNJ.png",
+                "alt": "",
+                "name": "59102780ID4LTNJ.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/59348M71Z1G25OH.png",
+                "alt": "",
+                "name": "59348M71Z1G25OH.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/81996HC9WMOP6SI.png",
+                "alt": "",
+                "name": "81996HC9WMOP6SI.png",
+                "link": ""
+            },
+            {
+                "url": "https://html-generator.com/uploads/images/2023/09/04/82297L09QUGSLWF.png",
+                "alt": "",
+                "name": "82297L09QUGSLWF.png",
+                "link": ""
+            }
+                ];
+            
+            // generated by https://www.html-code-generator.com/html/image-slideshow-generator
+                let slider_id = document.querySelector("#marchi-slider");
+            
+                // append all images
+                let dots_div = "";
+                let images_div = "";
+                for (let i = 0; i < images_list.length; i++) {
+                    // if no link without href="" tag
+                    let href = (images_list[i].link == "" ? "":' href="'+images_list[i].link+'"');
+                    images_div += '<a'+href+' class="hcg-slides animated"'+(i === 0 ? ' style="display:flex"':'')+'>'+
+                                    '<img src="'+images_list[i].url+'" alt="'+images_list[i].name+'">'+
+                                 '</a>';
+                }
+                slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
+                let slide_index = 0;
+            
+                const images = slider_id.querySelectorAll(".hcg-slides");
+                const showSlides = () => {
+                    if (slide_index > images.length-1) {
+                        slide_index = 0;
+                    }
+                    if (slide_index < 0) {
+                        slide_index = images.length-1;
+                    }
+                    for (let i = 0; i < images.length; i++) {
+                        images[i].style.display = "none";
+                        if (i == slide_index) {
+                            images[i].style.display = "flex";
+                        }
+                    }
+                }
+            
+                // auto play
+                setInterval(() => {
+                    slide_index++;
+                    showSlides();
+                }, 3000);
+            
+            })();
+            </script>
+            
     </body>
 </html>
 
